@@ -55,7 +55,7 @@ Variabel-variabel pada dataset MovieLens adalah sebagai berikut:
   plt.show()
   ```
 
-  ![Distribusi Rating](https://raw.githubusercontent.com/KeyCode17/Proyek-Machine-Learning/refs/heads/main/Assets/histogram.png)
+  ![Distribusi Rating](https://raw.githubusercontent.com/KeyCode17/Machine-Learning-Sistem-Rekomendasi/refs/heads/main/Assets/Distribution%20of%20Ratings.png)
 
  
   **Insight**: Mayoritas pengguna memberikan rating tertinggi pada angka 4 dan 3, menunjukkan bahwa penilaian film cenderung berada di tengah hingga positif. Hal ini mungkin mencerminkan preferensi pengguna yang lebih bijaksana atau adanya variasi dalam kualitas film yang ditonton.
@@ -86,7 +86,7 @@ Variabel-variabel pada dataset MovieLens adalah sebagai berikut:
   plt.show()
   ```
 
-  ![Distribusi Rating](https://raw.githubusercontent.com/KeyCode17/Proyek-Machine-Learning/refs/heads/main/Assets/histogram.png)
+  ![Top 10 Movies](https://raw.githubusercontent.com/KeyCode17/Machine-Learning-Sistem-Rekomendasi/refs/heads/main/Assets/Film%20Terpopuler.png)
 
   *Insight*: Beberapa film menerima lebih banyak perhatian, yang bisa mempengaruhi model rekomendasi. Film dengan jumlah rating tinggi mungkin lebih dikenal dan diminati oleh pengguna.
 
@@ -261,21 +261,19 @@ def svd_recommendations(user_id, num_recommendations=5):
 
 - **Root Mean Square Error (RMSE)**: Mengukur perbedaan antara nilai yang diprediksi dan aktual.
 
-  $$
-  RMSE = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (y_i - \hat{y}_i)^2}
-  $$
+$$RMSE = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (y_i - \hat{y}_i)^2}$$
 
 - **Precision@K**: Proporsi item yang relevan dalam top-K rekomendasi.
 
-  $$
-  Precision@K = \frac{\text{Jumlah item relevan dalam K rekomendasi}}{K}
-  $$
+$$
+Precision@K = \frac{\text{Jumlah item relevan dalam K rekomendasi}}{K}
+$$
 
 - **Recall@K**: Proporsi item relevan yang berhasil direkomendasikan dalam top-K.
 
-  $$
-  Recall@K = \frac{\text{Jumlah item relevan dalam K rekomendasi}}{\text{Total item relevan}}
-  $$
+$$
+Recall@K = \frac{\text{Jumlah item relevan dalam K rekomendasi}}{\text{Total item relevan}}
+$$
 
 ### Implementasi Metrik Evaluasi
 
